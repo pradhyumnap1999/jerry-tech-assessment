@@ -1,0 +1,44 @@
+RangeList Project
+    -> This project implements a RangeList class in JavaScript. The RangeList class is designed to manage a list of ranges, 
+       where each range is defined by a pair of integers. The class provides methods to add and remove ranges, as well as a method
+       to output the list of ranges as a string.
+
+Features
+    -> Add ranges to the list.
+    -> Remove ranges from the list.
+    -> Get a string representation of the range list.
+
+Getting Started
+    Prerequisites
+        Node.js (Download and install from Node.js official website)
+
+Installation
+    -> Unzip the project folder.
+    -> Navigate to the project directory in the terminal.
+    -> Install dependencies.
+        Command: 1) npm install
+                 2) npm install mocha
+
+Usage of RangeList Class shown in exampleUsage.js
+    -> To use the RangeList class, import it into your JavaScript file as shown below:
+        const RangeList = require('./RangeList');
+
+        // Create a new RangeList instance
+        const rl = new RangeList();
+
+        // Add a range to the list
+        rl.add([1, 5]);
+
+        // Remove a range from the list
+        rl.remove([2, 3]);
+
+        // Print the list of ranges
+        console.log(rl.toString()); // Outputs: '[1, 2) [3, 5)'
+
+Running Unit Tests
+    -> To run the unit tests:
+        Command: npm run test
+
+Running exampleUsage.js
+    -> To run this:
+        Command: node exampleUsage.js
